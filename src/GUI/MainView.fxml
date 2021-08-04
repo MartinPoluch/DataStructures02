@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="314.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainController">
+   <children>
+      <BorderPane>
+         <center>
+            <TabPane prefHeight="292.0" prefWidth="418.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Cars">
+                     <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="269.0" prefWidth="418.0">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="86.0" layoutY="22.0" prefHeight="224.0" prefWidth="217.0" spacing="12.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#showAllCars" prefHeight="31.0" prefWidth="140.0" text="Show all cars" />
+                                    <Button mnemonicParsing="false" onAction="#showCar" prefHeight="31.0" prefWidth="140.0" text="Find car" />
+                                    <Button mnemonicParsing="false" onAction="#addCar" prefHeight="31.0" prefWidth="140.0" text="Add car" />
+                                    <Button mnemonicParsing="false" onAction="#editCar" prefHeight="31.0" prefWidth="140.0" text="Edit car" />
+                                    <Button mnemonicParsing="false" onAction="#updateCar" prefWidth="140.0" text="Update car" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                </Tab>
+                <Tab text="Licences">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="244.0" prefWidth="288.0">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="50.0" layoutY="11.0" prefHeight="232.0" prefWidth="293.0" spacing="12.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#showAllLicences" prefWidth="140.0" text="Show all licenses" />
+                                    <Button mnemonicParsing="false" onAction="#showLicence" prefWidth="140.0" text="Find license" />
+                                    <Button mnemonicParsing="false" onAction="#addLicence" prefWidth="140.0" text="Add license" />
+                                    <Button mnemonicParsing="false" onAction="#editLicence" prefWidth="140.0" text="Edit license" />
+                                    <Button mnemonicParsing="false" onAction="#updateLicence" prefWidth="140.0" text="Update licence" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Files">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="260.0" prefWidth="418.0">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="82.0" layoutY="5.0" prefHeight="249.0" prefWidth="255.0" spacing="12.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#showLicencesSequence" prefWidth="200.0" text="Licences sequence output " />
+                                    <Button mnemonicParsing="false" onAction="#showHeapFileSequence" prefWidth="200.0" text="Cars sequence output" />
+                                    <Button mnemonicParsing="false" onAction="#showVinsSequence" prefWidth="200.0" text="VINs sequence output" />
+                                    <Button mnemonicParsing="false" onAction="#showPlatesSequence" prefWidth="200.0" text="Plates sequence output" />
+                                    <Button mnemonicParsing="false" onAction="#showHelperFiles" prefWidth="200.0" text="All helper files output" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Generator">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="86.0" layoutY="27.0" prefHeight="200.0" prefWidth="247.0" spacing="12.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#generateCars" prefWidth="150.0" text="Generate cars" />
+                                    <Button mnemonicParsing="false" onAction="#generateLicences" prefWidth="150.0" text="Generate licences" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Other">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER" layoutX="66.0" layoutY="27.0" prefHeight="200.0" prefWidth="287.0" spacing="12.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#saveAllHelperFiles" prefWidth="150.0" text="Save all helper files" />
+                                    <Button mnemonicParsing="false" onAction="#deleteAllLicences" prefWidth="150.0" text="Delete all licences" />
+                                    <Button mnemonicParsing="false" onAction="#deleteAllCars" prefWidth="150.0" text="Delete all cars" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

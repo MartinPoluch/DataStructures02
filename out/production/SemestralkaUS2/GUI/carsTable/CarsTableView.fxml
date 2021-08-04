@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="858.0" prefWidth="1416.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.carsTable.CarsTableController">
+   <children>
+      <TableView fx:id="carsTableView" prefHeight="838.0" prefWidth="1247.0">
+         <columns>
+            <TableColumn fx:id="ecvCol" prefWidth="146.99993896484375" sortable="false" text="ECV" />
+            <TableColumn fx:id="vinCol" prefWidth="277.0" sortable="false" text="VIN" />
+            <TableColumn fx:id="axlesCol" prefWidth="134.0" sortable="false" text="Axles" />
+            <TableColumn fx:id="weightCol" prefWidth="188.0" sortable="false" text="Weight" />
+            <TableColumn fx:id="wantedCol" prefWidth="130.0" sortable="false" text="Wanted" />
+            <TableColumn fx:id="endOfSTKCol" prefWidth="249.0" sortable="false" text="End of STK" />
+            <TableColumn fx:id="endOfEKCol" prefWidth="270.0" sortable="false" text="End of EK" />
+         </columns>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TableView>
+   </children>
+</VBox>

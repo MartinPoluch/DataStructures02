@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="377.0" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.start.settings.SettingsController">
+   <children>
+      <Label text="Capacity of blocks">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <Label text="Licences" />
+            <TextField fx:id="licencesInput" text="0" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <Label text="Cars heap file" />
+            <TextField fx:id="carsHeapFileInput" text="0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <Label text="Cars by ECV" />
+            <TextField fx:id="carsByECVInput" text="0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <Label text="Cars by VIN" />
+            <TextField fx:id="carsByVINInput" text="0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="61.0" prefWidth="337.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#save" prefWidth="80.0" text="Save" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

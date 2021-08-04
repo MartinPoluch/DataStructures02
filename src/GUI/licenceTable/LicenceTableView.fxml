@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.licenceTable.LicenceTableController">
+   <children>
+      <TableView fx:id="licenceTableView" prefHeight="838.0" prefWidth="1247.0">
+        <columns>
+            <TableColumn fx:id="idCol" prefWidth="146.99993896484375" sortable="false" text="ID" />
+          <TableColumn fx:id="firstNameCol" prefWidth="258.9999694824219" sortable="false" text="First name" />
+          <TableColumn fx:id="lastNameCol" prefWidth="270.0" sortable="false" text="Last name" />
+            <TableColumn fx:id="endCol" prefWidth="209.0" sortable="false" text="End of validity" />
+            <TableColumn fx:id="banCol" prefWidth="141.0" sortable="false" text="Ban" />
+            <TableColumn fx:id="finesCol" prefWidth="222.0" sortable="false" text="Number of fines" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TableView>
+   </children>
+</VBox>
